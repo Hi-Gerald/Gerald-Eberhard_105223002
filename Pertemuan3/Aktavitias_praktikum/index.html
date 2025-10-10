@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen Semantik</title>
+</head>
+<body>
+    <header>
+        <h1>Gerald Eberhard</h1>
+        <!-- Navbar -->
+        <nav>
+            <ul type = "none">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="#contactme">Kontak Saya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Lagu -->
+    <div class="Lagu">
+        <p>Daftar <span class="highlight">Lagu</span></p>
+        <ul>
+            <li>Ketaatan by GMS Live</li>
+            <li>Canon Rock</li>
+    
+        </ul>
+        <audio controls loop src="Iframe Ketaatan - GMS Live (Official Video) [AYW1fcLL2GQ].mp3"></audio>
+        <audio autoplay loop src="Iframe Canon Rock - Cole Rolland (Guitar Cover) [L007GhpMR3U].mp3"></audio>
+    </div>
+
+    <!-- Video -->
+    <div class="Video">
+        <video controls 
+        width="400" 
+        height="240"
+        src="Es Teh Manis - 1 minute short movie.mp4"></video>
+    </div>
+
+    <div id = "contactme">
+        <h3>105223002</h3>
+        <form action="">
+            <table border="1">
+                <tr>
+                    <td>
+                        <label form="Nama">Nama Lengkap</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Nama" name="nama" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label form="nim">NIM</label>
+                    </td>
+                    <td>
+                        <input type="number" id="nim" name="nim" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label form="Jenis Kelamin">Jenis Kelamin</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Jenis Kelamin" value="Pria">pria<br>
+                        <input type="radio" name="Jenis Kelamin" value="Wanita">wanita
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label form="Hobi">Hobi</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Membaca">Membaca<br>
+                        <input type="checkbox" name="Main Game">Main Game<br>
+                        <input type="checkbox" name="Menggambar">Menggambar
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label form="Prodi">Prodi</label>
+                    </td>
+                    <td>
+                        <select name="Prodi" id="prodi">
+                            <option value="Ilmu Komputer">Ilmu Komputer</option>
+                            <option value="CS"selected>CS</option>
+                            <option value="Komunikasi">Komunikasi</option>
+                        </select>
+                    </td>
+
+                </tr>
+            </table>
+            <input type="submit" name="submit" value="submit">
+            <input type="reset" name="reset" value="reset">
+        </form>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2023 Gerald Eberhard. Semua Hak Cipta Dilindungi</p>
+        <p>
+            <a href="/privacy">Kebijakan Privasi</a>
+            <a href="/terms">Ketentuan Layanan</a>
+
+        </p>
+    </footer>
+</body>
+</html>
