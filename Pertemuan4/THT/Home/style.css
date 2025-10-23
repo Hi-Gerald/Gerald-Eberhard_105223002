@@ -1,0 +1,157 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Background Video ===== */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* ===== Overlay to darken video ===== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 25, 10, 0.55); /* sedikit hijau gelap agar serasi dengan hutan */
+  z-index: -1;
+}
+
+/* ===== Profile Card ===== */
+.profile-card {
+  background: rgba(255, 255, 255, 0.93);
+  backdrop-filter: blur(8px);
+  max-width: 520px;
+  margin: 8% auto;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeUp 1s ease forwards;
+}
+
+/* ===== Foto Profil ===== */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #00a884; /* hijau kebiruan */
+  margin-bottom: 15px;
+}
+
+/* ===== Teks ===== */
+.profile-card h1 {
+  font-size: 1.8em;
+  color: #1b1b1b;
+  margin-bottom: 10px;
+}
+.profile-card h1 span {
+  color: #007f67; /* hijau ke biru */
+}
+.profile-card p {
+  font-size: 0.95em;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* ===== Tombol Grid ===== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+/* ===== Tombol Umum ===== */
+.btn {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== Tombol Warna ===== */
+.btn.primary {
+  background: #007f67;
+  color: #fff;
+}
+.btn.primary:hover {
+  background: #005f4f;
+}
+
+.btn.secondary {
+  color: #007f67;
+  border: 2px solid #007f67;
+}
+.btn.secondary:hover {
+  background: #007f67;
+  color: #fff;
+}
+
+.btn.linkedin {
+  background-color: #0a66c2;
+  color: #fff;
+}
+.btn.linkedin:hover {
+  background-color: #084d91;
+}
+
+.btn.github {
+  background-color: #24292e;
+  color: #fff;
+}
+.btn.github:hover {
+  background-color: #000;
+}
+
+/* ===== Ikon ===== */
+.icon {
+  width: 18px;
+  height: 18px;
+}
+/* Footer */
+footer {
+  position: fixed; /* agar selalu di bawah */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* sedikit transparan agar menyatu dengan video background */
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
+  backdrop-filter: blur(5px); /* efek blur halus */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* ===== Animasi ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
