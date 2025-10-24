@@ -1,0 +1,39 @@
+.grid-container-area{
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 1fr 4fr;
+
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "article article"
+        "footer footer";
+
+    gap: 4px;
+}
+
+.page-header {
+    grid-area: header;
+    color: white;
+    background-color: blue;
+}
+
+.main-article {
+    grid-area: article;
+    color: white; 
+    background-color: red;
+    padding: 20px;
+}
+
+.page-footer {
+    grid-area: footer;
+    color: white;
+    background-color: green;
+}
+
+.main-article > p > img {
+    float: left;
+    width: 200px;
+}
