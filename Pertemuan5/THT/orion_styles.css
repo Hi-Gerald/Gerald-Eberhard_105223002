@@ -1,0 +1,85 @@
+/* === Tahap 2: Grid Layout === */
+#mission-control {
+  display: grid;
+  grid-template-columns: 3, 1fr); /* 3 kolom sama lebar */
+  gap: 20px; /* jarak antar kartu */
+  padding: 20px;
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* === Tahap 3: Flexbox di dalam kartu === */
+.asset-card {
+  display: flex;
+  flex-direction: column; /* isi dari atas ke bawah */
+  justify-content: flex-start;
+  background-color: #1e1e1e;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #555; /* border default abu gelap */
+  position: relative; /* penting untuk overlay nanti */
+  border-radius: 8px;
+  min-height: 180px;
+  transition: border 0.3s, transform 0.3s;
+}
+
+.asset-status {
+  margin-top: auto; /* dorong ke bagian bawah */
+  font-weight: bold;
+  color: #00ff99;
+}
+
+/* === Tahap 4: Overlay interaktif (pseudo-element) === */
+.asset-card::after {
+  content: "Buka Arsip Proyek";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 255, 0.2);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Saat di-hover, overlay muncul */
+.asset-card:hover::after {
+  opacity: 1;
+}
+
+/* === Tahap 5: "Perangkap Protokol Klien" === */
+
+/* Aset prioritas: border cyan */
+#priority-alpha {
+  border: 2px solid #00FFFF;
+}
+
+/* Saat kartu di-hover: border magenta (mengalahkan ID tanpa !important) */
+.asset-card:hover {
+  border: 2px solid #FF00FF;
+  transform: scale(1.03); /* efek interaktif kecil */
+}
+
+/*
+Catatan: Kenapa ini bisa mengalahkan ID (#priority-alpha)?
+Karena selector .asset-card:hover memiliki kombinasi class + pseudo-class
+yang secara spesifisitas lebih tinggi dibanding selector ID tunggal.
+*/
+
+/* Tambahan agar tampilan lebih modern */
+h3 {
+  margin-bottom: 8px;
+  color: #00FFFF;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 0.95em;
+}
