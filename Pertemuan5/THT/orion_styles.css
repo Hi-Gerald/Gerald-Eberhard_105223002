@@ -1,6 +1,7 @@
 /* === Tahap 2: Grid Layout === */
 #mission-control {
   display: grid;
+  height: 100vh;
   grid-template-columns: repeat(3, 1fr); /* 3 kolom sama lebar */
   gap: 20px; /* jarak antar kartu */
   padding: 20px;
