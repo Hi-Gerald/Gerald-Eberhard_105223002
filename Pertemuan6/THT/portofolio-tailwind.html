@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | Tailwind Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#2563eb',
+            ink: '#0f172a',
+            muted: '#6c757d',
+            bg: '#f8fafc'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-ink">
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-bold text-lg flex items-center gap-2">
+        <span class="w-5 h-5 rounded bg-brand inline-block"></span>
+        Desainer Problematik
+      </a>
+      <nav class="hidden md:flex items-center gap-6 font-semibold">
+        <a href="#bio" class="hover:text-brand">Tentang</a>
+        <a href="#galeri" class="hover:text-brand">Galeri</a>
+        <a href="#kontak" class="hover:text-brand">Kontak</a>
+        <a href="#kontak" class="px-4 py-2 rounded-xl bg-brand text-white hover:shadow-lg transition">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8 md:py-12">
+    <section id="bio" class="bg-gradient-to-tr from-brand/10 to-transparent rounded-2xl p-6 md:p-10 shadow">
+      <div class="md:grid md:grid-cols-3 md:gap-8 items-center">
+        <div class="text-center md:order-last">
+          <img src="Image/Pas Foto.png" class="rounded-full shadow-xl ring-4 ring-white mx-auto" alt="Foto Profil">
+        </div>
+        <div class="md:col-span-2 mt-6 md:mt-0">
+          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">Gerald Eberhard</h1>
+          <p class="mt-3 text-muted text-lg">Saya adalah seorang desainer grafis yang berfokus pada pengembangan identitas visual dan antarmuka digital. Saya percaya bahwa desain yang baik bukan hanya terlihat menarik, tetapi juga mampu menyampaikan pesan dengan jelas dan memiliki fungsi yang tepat. Dalam setiap proyek, saya selalu mengutamakan kesederhanaan, konsistensi, dan pemahaman terhadap kebutuhan pengguna agar hasil yang dibuat dapat relevan, efektif, serta memiliki karakter visual yang kuat.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-blue-50 text-brand text-sm font-semibold">Branding</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm font-semibold">UI/UX</span>
+            <span class="px-3 py-1 rounded-full bg-slate-800 text-white text-sm font-semibold">Illustration</span>
+            <span class="px-3 py-1 rounded-full bg-cyan-100 text-cyan-700 text-sm font-semibold">Motion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri" class="mt-12">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-bold flex items-center gap-2">
+          <span class="inline-block w-2 h-6 bg-brand rounded"></span> Galeri Proyek
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <figure class="bg-white rounded-xl overflow-hidden shadow hover:-translate-y-1 hover:shadow-xl transition">
+  <img src="Image/img1.jpg" class="w-full aspect-video object-cover" alt="Project 1">
+  <figcaption class="p-4">
+    <h3 class="font-semibold">Project 1</h3>
+    <p class="text-sm text-muted">Deskripsi singkat proyek 1</p>
+  </figcaption>
+</figure>
+<figure class="bg-white rounded-xl overflow-hidden shadow hover:-translate-y-1 hover:shadow-xl transition">
+  <img src="Image/img2.png" class="w-full aspect-video object-cover" alt="Project 2">
+  <figcaption class="p-4">
+    <h3 class="font-semibold">Project 2</h3>
+    <p class="text-sm text-muted">Deskripsi singkat proyek 2</p>
+  </figcaption>
+</figure>
+<figure class="bg-white rounded-xl overflow-hidden shadow hover:-translate-y-1 hover:shadow-xl transition">
+  <img src="Image/img3.png" class="w-full aspect-video object-cover" alt="Project 3">
+  <figcaption class="p-4">
+    <h3 class="font-semibold">Project 3</h3>
+    <p class="text-sm text-muted">Deskripsi singkat proyek 3</p>
+  </figcaption>
+</figure>
+<figure class="bg-white rounded-xl overflow-hidden shadow hover:-translate-y-1 hover:shadow-xl transition">
+  <img src="Image/img4.jpg" class="w-full aspect-video object-cover" alt="Project 4">
+  <figcaption class="p-4">
+    <h3 class="font-semibold">Project 4</h3>
+    <p class="text-sm text-muted">Deskripsi singkat proyek 4</p>
+  </figcaption>
+</figure>
+<figure class="bg-white rounded-xl overflow-hidden shadow hover:-translate-y-1 hover:shadow-xl transition">
+  <img src="Image/img5.jpg" class="w-full aspect-video object-cover" alt="Project 5">
+  <figcaption class="p-4">
+    <h3 class="font-semibold">Project 5</h3>
+    <p class="text-sm text-muted">Deskripsi singkat proyek 5</p>
+  </figcaption>
+</figure>
+<figure class="bg-white rounded-xl overflow-hidden shadow hover:-translate-y-1 hover:shadow-xl transition">
+  <img src="Image/img6.jpg" class="w-full aspect-video object-cover" alt="Project 6">
+  <figcaption class="p-4">
+    <h3 class="font-semibold">Project 6</h3>
+    <p class="text-sm text-muted">Deskripsi singkat proyek 6</p>
+  </figcaption>
+</figure>
+      </div>
+    </section>
+
+    <section id="kontak" class="mt-12">
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl p-6 shadow">
+          <h2 class="text-xl font-bold mb-4">Hubungi Saya</h2>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-sm font-semibold mb-1">Nama</label>
+              <input class="w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-4 focus:ring-brand/20" placeholder="Nama lengkap" required>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1">Email</label>
+              <input type="email" class="w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-4 focus:ring-brand/20" placeholder="email@contoh.com" required>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold mb-1">Pesan</label>
+              <textarea rows="4" class="w-full border rounded-xl px-3 py-2 focus:outline-none focus:ring-4 focus:ring-brand/20" placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="px-5 py-2 rounded-xl bg-brand text-white font-semibold hover:shadow-lg transition">
+              Kirim
+            </button>
+          </form>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow">
+          <h3 class="text-lg font-bold mb-2">Detail Kontak</h3>
+          <p class="text-muted mb-4">Terbuka untuk proyek branding, antarmuka digital, dan kampanye visual. Salam <b>Designer Problematik</b></p>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-center gap-2"><span class="w-6 h-6 grid place-items-center rounded bg-slate-100">📍</span> Jakarta, Indonesia</li>
+            <li class="flex items-center gap-2"><span class="w-6 h-6 grid place-items-center rounded bg-slate-100">✉️</span> fungfangfangfung@gmail.com</li>
+            <li class="flex items-center gap-2"><span class="w-6 h-6 grid place-items-center rounded bg-slate-100">📞</span> +62 888-9999-1111</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-12 py-6 border-t text-muted">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <span class="text-sm">&copy; 2025 Desainer Pro. All rights reserved.</span>
+      <div class="flex gap-4 text-xl">
+        <a href="#" class="hover:text-brand">•</a>
+        <a href="#" class="hover:text-brand">•</a>
+        <a href="#" class="hover:text-brand">•</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
