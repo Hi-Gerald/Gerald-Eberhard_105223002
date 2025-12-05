@@ -1,0 +1,128 @@
+/* ========== GLOBAL STYLE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background blur elegan */
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url("GambarHutan.png") center/cover no-repeat;
+  filter: blur(8px) brightness(0.4);
+  z-index: -1;
+}
+
+/* Konten utama */
+.content {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Judul dan deskripsi */
+header h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+header p {
+  color: #e0e0e0;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+/* Kartu proyek */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h2 {
+  font-size: 1.2rem;
+  color: #e8f5e9;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Tombol detail */
+button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0d8af0;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1.5px solid white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #ddd;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Gerald Eberhard</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>Silakan tinggalkan pesan Anda di bawah ini.</p>
+
+        <!-- Pesan sukses -->
+        <p id="successMessage" class="success-message" style="display: none;"></p>
+
+        <form id="contactForm">
+            <label for="name">Nama</label>
+            <input type="text" id="name">
+            <small id="nameError" class="error-message"></small>
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+            <small id="emailError" class="error-message"></small>
+
+            <label for="message">Pesan</label>
+            <textarea id="message"></textarea>
+            <small id="messageError" class="error-message"></small>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <a href="../Home/index.html" class="back-btn">← Kembali ke Profil</a>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
